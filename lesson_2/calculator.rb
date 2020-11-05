@@ -1,5 +1,5 @@
 def prompt(message)
-  Kernel.puts("=> #{message}")
+  puts"=> #{message}"
 end
 
 def valid_num?(number)
