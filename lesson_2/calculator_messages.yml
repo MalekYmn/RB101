@@ -1,6 +1,10 @@
 
-welcome: "Welcome to Calculator! Enter your name:"
-valid_name: "Make sure to enter a valid name."
+en:
+  welcome: "Welcome to Calculator! Enter your name:"
+  valid_name: "Make sure to enter a valid name."
+es:
+  welcome: "Bienvenido a la calculadora! Entre su nombre:"
+  valid_name: "Asegúrese de entrar un nombre válido."
 first_numb: "What's the first number?"
 second_numb: "What's the second number?"
 valid_numb: "Hmm... that doesn't look like a valid number"

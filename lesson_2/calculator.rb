@@ -1,5 +1,11 @@
+LANGUAGE = 'en'
+
 require 'yaml'
 MESSAGES = YAML.load_file('calculator_messages.yml')
+
+def messages(message, lang='en')
+  MESSAGES[lang][message]
+end
 
 def prompt(message)
   puts "=> #{message}"
@@ -30,13 +36,13 @@ def operation_to_message(operator)
              end
 end
 
-prompt(MESSAGES['welcome'])
+prompt(messages('welcome', LANGUAGE))
 name = ''
 
 loop do
   name = gets().chomp()
   if name.empty?()
-    prompt(MESSAGES['valid_name'])
+    prompt(messages('valid_name', LANGUAGE))
   else
     break
   end
